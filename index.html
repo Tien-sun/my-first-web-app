@@ -1,12 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>クオンAGモイストジェル | 限定キャンペーン※これはテストページです</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- 基本設定 --- */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Serif JP', serif;
+            color: #333;
+            line-height: 1.8;
+            background-color: #fffaf5; /* 柔らかなベージュ */
+        }
+
+        img { max-width: 100%; height: auto; }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* スマホで見やすいLP幅に設定 */
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* --- セクション共通 --- */
+        section { padding: 40px 20px; text-align: center; }
+        .section-title {
+            font-size: 1.5rem;
+            color: #b08d57; /* ゴールド系 */
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        /* --- メインビジュアル --- */
+        .hero {
+            background-color: #f4ece4;
+            padding: 0;
+        }
+        .hero-text {
+            padding: 40px 20px;
+            font-weight: bold;
+        }
+        .hero-text h1 { font-size: 1.2rem; color: #b08d57; margin-bottom: 10px; }
+        .hero-text p { font-size: 1.5rem; line-height: 1.4; }
+
+        /* --- お悩みセクション --- */
+        .trouble { background-color: #efefef; }
+        .trouble-list {
+            text-align: left;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .trouble-list li {
+            list-style: none;
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .trouble-list li::before {
+            content: "□";
+            position: absolute;
+            left: 0;
+            color: #b08d57;
+        }
+
+        /* --- 成分・特徴セクション --- */
+        .features { background-color: #fff; }
+        .feature-box {
+            border: 2px solid #b08d57;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .feature-tag {
+            background: #b08d57;
+            color: #fff;
+            padding: 5px 15px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        /* --- CTA（購入ボタン） --- */
+        .cta-area {
+            position: sticky; /* 画面下に追従 */
+            bottom: 20px;
+            padding: 0 20px;
+            z-index: 100;
+        }
+        .cta-button {
+            display: block;
+            background: linear-gradient(to bottom, #f0ad4e, #d9534f);
+            color: #fff;
+            padding: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.4rem;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* --- よくある質問 --- */
+        .faq { background: #f9f9f9; text-align: left; }
+        details {
+            background: #fff;
+            margin-bottom: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        summary { font-weight: bold; cursor: pointer; }
+
+    </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Site</h1>
-    <p>This is my first GitHub Pages deployment!</p>
+
+<div class="container">
+    <header class="hero">
+        <div class="hero-text">
+            <h1>美容成分NMN配合オールインワンジェル</h1>
+            <p>潤いに満ちた、<br>あの頃のハリツヤ肌へ。</p>
+        </div>
+        <img src="https://via.placeholder.com/600x400/f4ece4/b08d57?text=Product+Image" alt="商品画像">
+    </header>
+
+    <section class="trouble">
+        <h2 class="section-title">こんなお悩みありませんか？</h2>
+        <ul class="trouble-list">
+            <li>最近、肌のハリがなくなってきた</li>
+            <li>乾燥して小じわが目立つ</li>
+            <li>今のスキンケアに満足していない</li>
+        </ul>
+    </section>
+
+    <section class="features">
+        <h2 class="section-title">選ばれる3つの理由</h2>
+        
+        <div class="feature-box">
+            <span class="feature-tag">理由 01</span>
+            <h3>次世代成分「NMN」配合</h3>
+            <p>エイジングケアの決定版。肌の基礎力を整え、内側から輝くようなハリを与えます。</p>
+        </div>
+
+        <div class="feature-box">
+            <span class="feature-tag">理由 02</span>
+            <h3>高浸透PDS技術</h3>
+            <p>成分をナノレベルでカプセル化。角質層のすみずみまで、美容成分を届けます。</p>
+        </div>
+    </section>
+
+    <section class="faq">
+        <h2 class="section-title" style="text-align: center;">よくあるご質問</h2>
+        <details>
+            <summary>1回の使用量はどのくらいですか？</summary>
+            <p>さくらんぼ1粒分を目安にお使いください。</p>
+        </details>
+        <details>
+            <summary>敏感肌でも使えますか？</summary>
+            <p>はい。お肌に優しい処方ですが、心配な場合はパッチテストをお勧めします。</p>
+        </details>
+    </section>
+
+    <div class="cta-area">
+        <a href="#" class="cta-button">
+            限定キャンペーンで<br>今すぐ申し込む
+        </a>
+    </div>
+
+    <footer style="padding: 40px; background: #333; color: #fff; font-size: 0.8rem; text-align: center;">
+        &copy; 2025 LouLou Store. All Rights Reserved.
+    </footer>
+</div>
+
 </body>
 </html>
